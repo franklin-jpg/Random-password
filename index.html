@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Random Password Generator</title>
+</head>
+
+<body>
+  <!-- nav section  -->
+  <nav>
+    <div class="nav-container">
+      <img src="images/images/WhatsApp Image 2025-05-15 at 15.24.16_e355f0be.jpg" width="70px" height="80px" alt=""
+        style="padding-left: 0.3rem;">
+      <p class="nav-logo">Frankpass</p>
+      <div class="topnav" id="myTopnav">
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="index.html">Home</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+
+
+  </nav>
+
+
+  <!-- main section -->
+  <main>
+    <!-- generate-section -->
+    <div class="generate-section">
+      <div class="main-topic">
+        <h1>Random Password Generator</h1>
+        <p>Create strong and secure passwords to keep your account safe online.</p>
+      </div>
+      <div class="main-content">
+        <div class="main-image">
+          <img src="images/images/Untitled.svg" alt="">
+        </div>
+
+        <div class=" password-container">
+          <div class="password-display">
+            <input type="text" id="password" readonly />
+            <button class="copy-btn" onclick="copyPassword()">Copy</button>
+          </div>
+
+          <div class="section-select">
+            <label>Password length: <span id="lengthValue"></span></label>
+            <div class="slider-container">
+              <button onclick="changeLength(-1)">-</button>
+              <input type="range" id="length" min="4" max="30" value="8" oninput="updateLength(this.value)">
+              <button onclick="changeLength(1)">+</button>
+            </div>
+          </div>
+
+          <div class="sectionchar-options">
+            <p>Characters Used:</p>
+            <div class="char-options">
+              <label><input type="checkbox" id="uppercase" checked> ABC</label>
+              <label><input type="checkbox" id="lowercase" checked> abc</label>
+              <label><input type="checkbox" id="numbers" checked> 123</label>
+              <label><input type="checkbox" id="symbols"> #$&</label>
+            </div>
+          </div>
+
+          <button class="generate-btn" onclick="generatePassword()">Generate Password</button>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- info-section  -->
+    <div class="info-section">
+      <div class="info-topic">
+        <h1>What Makes a Password Strong?</h1>
+      </div>
+
+      <div class="info-contents">
+        <div class="content">
+          <img src="images/images/password-checkmark--key-tick.svg" alt="">
+          <h3>Long</h3>
+          <p>The longer a password, the more secure it is. A strong password should be at least 10 characters long.
+          </p>
+        </div>
+        <div class="content">
+          <img src="images/images/https-encryption--lock.svg" alt="">
+          <h3>Complex</h3>
+          <p>Strong passwords use a combination of letters, numbers, cases, and symbols to form an unpredictable
+            string of characters that doesn't resemble words or names.</p>
+        </div>
+        <div class="content">
+          <img src="images/images/https-encryption--lock.svg" alt="">
+          <h3>Unique</h3>
+          <p>A strong password should be unique to each account to reduce vulnerability in the event of a hack.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="about-container">
+      <div class="about-topic">
+        <h1>Why Thousands of inndividuals Use Frankpass</h1>
+        <p>World-Class Security</p>
+      </div>
+      <div class="about-content">
+        <div class="content-info">
+          <img src="images/images/Untitled (3).png" alt="">
+          <p>Easiest to Deploy</p>
+        </div>
+        <div class="content-info">
+          <img src="images/images/Untitled (2).jpg" alt="">
+          <p>Easiest to Manage</p>
+        </div>
+        <div class="content-info">
+          <img src="images/images/Untitled.jpg" alt="">
+          <p>Most Secure</p>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- footer-section -->
+  <footer class="footer">
+    <div class=" footer-contianer">
+      <p>&copy; 2025 Agrolife. All Rigrts Reserved.</p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/share/1LA6hjTf6x/"><i class="fab fa-facebook"></i></a>
+        <a href="instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/Chinaza4Okereke?t=MQ_qMZlRPLOMlmQLabFNwQ&s=09"><i class="fab fa-twitter"></i></a>
+        <a
+           href="https://www.linkedin.com/in/okereke-chinaza-147564355?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+            class="fab fa-linkedin"></i></a>
+        <a href="https://wa.me/qr/Y4DQBFFHDY77I1 " target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.tiktok.com/@okerekechinaza1?_r=1&_d=ehg012hkihce5c&sec_uid=MS4wLjABAAAAS90hXWKAYesQ4LwaR80KN00hmK93Z-JNO141ykLixdkTzGipdPViiXCsSqNumZyS&share_author_id=7090057591631528966&sharer_language=en&source=h5_m&u_code=e1c4j35kk777cd&timestamp=1742900285&user_id=7090057591631528966&sec_user_id=MS4wLjABAAAAS90hXWKAYesQ4LwaR80KN00hmK93Z-JNO141ykLixdkTzGipdPViiXCsSqNumZyS&utm_source=copy&utm_campaign=client_share&utm_medium=android&share_iid=7482754443009214213&share_link_id=d23ad335-516e-4b38-b2d6-8f09efd5e5a7&share_app_id=1233&ugbiz_name=ACCOUNT&ug_btm=b8727%2Cb7360&social_share_type=5&enable_checksum=1"
+          target="_blank"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
