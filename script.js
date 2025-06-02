@@ -2,6 +2,7 @@
     const lengthSlider = document.getElementById('length');
     const lengthValue = document.getElementById('lengthValue');
     const passwordField = document.getElementById('password');
+    const copy = document.getElementById("copy-btn")
 
     function updateLength(value) {
       lengthValue.textContent = value;
@@ -27,9 +28,12 @@
       if (useLower) chars += 'abcdefghijklmnopqrstuvwxyz';
       if (useNumber) chars += '0123456789';
       if (useSymbol) chars += '!@#$%^&*()_+~';
+    
 
       if (chars.length === 0) {
         passwordField.value = '';
+        passwordField.innerText = "please click to generate"
+        copy.innerText = "password field is empty"
         return;
       }
 
