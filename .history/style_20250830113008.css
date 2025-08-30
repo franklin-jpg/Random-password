@@ -116,8 +116,7 @@ body {
   width: 50px;
   border-radius: 10px;
   border: none;
-  color: white;
-
+  
 }
 
 .sectionchar-options {
@@ -138,7 +137,8 @@ body {
   transition: 3s;
   color: white;
 }
-
+.slider-container button {
+}
 
 .generate-btn:active {
   transform: scale(0.5);
