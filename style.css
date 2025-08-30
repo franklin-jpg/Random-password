@@ -116,7 +116,7 @@ body {
   width: 50px;
   border-radius: 10px;
   border: none;
-  color: white;
+  color: hsl(221, 79%, 55%);
 
 }
 
@@ -124,6 +124,10 @@ body {
   display: flex;
   margin: 2rem;
   gap: 1rem;
+}
+
+.char-options{
+  color: rgb(53, 53, 210);
 }
 
 
