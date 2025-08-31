@@ -25,6 +25,16 @@ body {
   left: 5px;
 }
 
+.logo-contaner {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.logo-contaner h1 {
+  font-size: 2rem;
+}
+
+
 .topnav a {
   float: right;
   display: block;
@@ -32,12 +42,13 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1.5rem;
 }
 
 .topnav a:hover {
   background-color: #ddd;
   color: black;
+  border-radius: 9px;
 }
 
 
@@ -61,10 +72,16 @@ body {
   font-size: 3.5rem;
 }
 
+.main-topic p {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
 
 .main-content {
   display: flex;
   align-items: center;
+  justify-content: space-around;
   gap: 5rem;
 }
 
@@ -74,10 +91,17 @@ body {
 }
 
 .password-display input {
-  font-size: 0.9rem;
+  font-size: 1.5rem;
   border-radius: 15px;
   height: 39px;
   width: 60%;
+}
+
+@media screen and (max-width: 550px) {
+
+.password-display input {
+  font-size: 1rem;
+}
 }
 
 .copy-btn {
@@ -116,7 +140,7 @@ body {
   width: 50px;
   border-radius: 10px;
   border: none;
-  color: hsl(221, 86%, 59%);
+  color: hsl(210, 9%, 96%);
 
 }
 
@@ -124,11 +148,21 @@ body {
   display: flex;
   margin: 2rem;
   gap: 1rem;
+
+}
+.sectionchar-options p {
+  font-size: 2rem;
 }
 
-.char-options{
-  color: rgb(45, 45, 228);
+@media screen and (max-width: 550px) {
+  .sectionchar-options p {
+  font-size: 1rem;
 }
+
+}
+
+
+
 
 
 .generate-btn {
@@ -178,13 +212,15 @@ body {
   gap: 0.7rem;
   border-radius: 12px;
   padding: 1.2rem 1.1rem;
-  width: 245px;
+  width: 400px;
+  height: 300px;
   min-width: 210px;
   text-align: center;
   background-color: #FFF9F5;
   box-shadow: 0px 0px 13px 2px  #e0ccba;
   margin-bottom: 4rem;
 }
+
 
 .content img {
   width: 48px;
@@ -194,13 +230,13 @@ body {
 
 
 .content h3 {
-  font-size: 1.22rem;
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 0.2rem;
 }
 
 .content p {
-  font-size: 1rem;
+  font-size: 1.3rem;
   line-height: 1.5;
 }
 
@@ -209,11 +245,16 @@ body {
   margin-top: 5rem;
 }
 
+.about-topic p {
+  font-size: 1.3rem;
+  margin: 1rem;
+}
+
 .about-content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 6rem;
+  justify-content: space-around;
+  
   margin-top: 4rem;
 
 }
@@ -242,6 +283,7 @@ body {
 .footer-contianer p {
   text-align: center;
   padding-top: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .social-icons {
@@ -250,7 +292,8 @@ body {
 }
 
 .social-icons i {
-  color: black;
+  color: rgb(145, 48, 48);
+  margin: 10px;
 }
 
 
@@ -260,7 +303,46 @@ body {
     display: none;
   }
    
+  .logo-contaner h1 {
+  font-size: 1.5rem;
+}
 
+
+
+.info-section {
+  background-color: #FFF1E5;
+
+}
+
+
+  .content{
+  width: 300px;
+  height: 200px;
+}
+
+
+
+.content h3 {
+  font-size: 1rem;
+}
+
+
+.content p {
+  font-size: 0.9rem;
+}
+.main-topic p {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.footer-contianer p {
+font-size: 1rem;
+}
+.social-icons i {
+  color: rgb(145, 48, 48);
+  margin: 10px;
+  font-size: 1rem;
+}
   .main-content {
     display: flex;
     flex-direction: column;
